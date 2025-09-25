@@ -2,9 +2,10 @@ import sys
 from PySide6 import QtWidgets, QtGui, QtCore
 
 class Cell(QtWidgets.QGraphicsRectItem):
-    def __init__(self, x, y, size, row, col):
+    def __init__(self, x, y, size, row, col, window):
         super().__init__(x, y, size, size)
         self.setAcceptedMouseButtons(QtCore.Qt.AllButtons)
+        self.window = window    #give the cell a pointer to the window so the cell has knowledge on what cells exist
         
         #keep track of cell position on grid
         self.row = row
@@ -14,7 +15,7 @@ class Cell(QtWidgets.QGraphicsRectItem):
         self.setPen(QtGui.QPen(QtGui.QColor("black")))
         self.setColor("grey")
 
-        #set the state of the cell (empty, wall, start, goal)
+        #set the default state of the cell (empty, wall, start, goal)
         self.state = "empty"
 
     def setColor(self, color):
@@ -37,9 +38,26 @@ class Cell(QtWidgets.QGraphicsRectItem):
                 self.setColor("black")
 
         elif event.button() == QtCore.Qt.RightButton:
-            self.setColor("green")  #starting cell
+            if(self.state == "goal"):
+                return
+            elif(self.window.start_cell is None): #if there does not already exist a starting cell
+                self.setColor("green")
+                self.window.start_cell = self
+            else:
+                self.window.start_cell.setColor("grey")
+                self.setColor("green")
+                self.window.start_cell = self
+
         elif event.button() == QtCore.Qt.MiddleButton:
-            self.setColor("red")    #'goal' cell
+            if(self.state == "start"):
+                return
+            elif(self.window.goal_cell is None):  #if there does not already exist a goal cell
+                self.setColor("red")
+                self.window.goal_cell = self
+            else:
+                self.window.goal_cell.setColor("grey")
+                self.setColor("red")
+                self.window.goal_cell = self
 
 
 class Window(QtWidgets.QWidget):
@@ -49,6 +67,9 @@ class Window(QtWidgets.QWidget):
         self.scene = QtWidgets.QGraphicsScene()
         self.view = QtWidgets.QGraphicsView(self.scene)
 
+        self.start_cell = None
+        self.goal_cell = None
+
         layout = QtWidgets.QVBoxLayout(self)
         layout.addWidget(self.view)
 
@@ -56,7 +77,7 @@ class Window(QtWidgets.QWidget):
         cell_size = 50
         for row in range(20):
             for col in range(20):
-                cell = Cell(col * cell_size, row * cell_size, cell_size, row, col)
+                cell = Cell(col * cell_size, row * cell_size, cell_size, row, col, self)
                 self.scene.addItem(cell)
 
 if __name__ == "__main__":
