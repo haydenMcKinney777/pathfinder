@@ -1,5 +1,4 @@
 import sys
-import random
 from PySide6 import QtWidgets, QtGui
 
 class Cell(QtWidgets.QGraphicsRectItem):
