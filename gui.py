@@ -5,6 +5,7 @@ class Cell(QtWidgets.QGraphicsRectItem):
     def __init__(self, x, y, size, row, col, window):
         super().__init__(x, y, size, size)
         self.setAcceptedMouseButtons(QtCore.Qt.AllButtons)
+        self.setAcceptHoverEvents(True)
         self.window = window    #give the cell a pointer to the window so it knows about the grid
         
         #keep track of cell position on grid
@@ -18,18 +19,13 @@ class Cell(QtWidgets.QGraphicsRectItem):
     def setState(self, state: str):
         """Set the logical state and update the visual color accordingly."""
         self.state = state
-
-        if state == "wall":
-            self.setBrush(QtGui.QBrush(QtGui.QColor("black")))
-        elif state == "start":
-            self.setBrush(QtGui.QBrush(QtGui.QColor("green")))
-        elif state == "goal":
-            self.setBrush(QtGui.QBrush(QtGui.QColor("red")))
-        else:  #empty
-            self.setBrush(QtGui.QBrush(QtGui.QColor("grey")))
+        color = {"wall":"black", "start":"green", "goal":"red"}.get(state, "grey")
+        self.setBrush(QtGui.QBrush(QtGui.QColor(color)))
 
     def mousePressEvent(self, event):
         if event.button() == QtCore.Qt.LeftButton:
+            self.window.is_drawing = True   #only set is_drawing on left button presses - we only want to draw walls
+            
             if self.state == "wall":
                 self.setState("empty")
             elif self.state == "start":
@@ -63,16 +59,41 @@ class Cell(QtWidgets.QGraphicsRectItem):
                 self.setState("goal")
                 self.window.goal_cell = self
 
+    def mouseReleaseEvent(self, event):
+        if event.button() == QtCore.Qt.LeftButton:  #if the button that was released over a cell was left mouse, set is_drawing False
+            self.window.is_drawing = False
+
+
+class Scene(QtWidgets.QGraphicsScene):
+    def __init__(self, window):
+        super().__init__()
+        self.window = window
+
+    def mouseMoveEvent(self, event):
+        if self.window.is_drawing:
+            pos = event.scenePos()
+            for item in self.items(pos):
+                if isinstance(item, Cell) and item.state not in ("start", "goal"):
+                    item.setState("wall")
+                    break
+        super().mouseMoveEvent(event)
+
+    def mouseReleaseEvent(self, event):
+        if event.button() == QtCore.Qt.LeftButton:
+            self.window.is_drawing = False
+        super().mouseReleaseEvent(event)
 
 class Window(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
 
-        self.scene = QtWidgets.QGraphicsScene()
+        self.scene = Scene(self)
         self.view = QtWidgets.QGraphicsView(self.scene)
+        self.view.setMouseTracking(True)
 
         self.start_cell = None
         self.goal_cell = None
+        self.is_drawing = False
 
         layout = QtWidgets.QVBoxLayout(self)
         layout.addWidget(self.view)
