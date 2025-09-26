@@ -5,7 +5,7 @@ class Cell(QtWidgets.QGraphicsRectItem):
     def __init__(self, x, y, size, row, col, window):
         super().__init__(x, y, size, size)
         self.setAcceptedMouseButtons(QtCore.Qt.AllButtons)
-        self.window = window    #give the cell a pointer to the window so the cell has knowledge on what cells exist
+        self.window = window    #give the cell a pointer to the window so it knows about the grid
         
         #keep track of cell position on grid
         self.row = row
@@ -13,50 +13,54 @@ class Cell(QtWidgets.QGraphicsRectItem):
 
         #define color attributes of cell (outline, fill color)
         self.setPen(QtGui.QPen(QtGui.QColor("black")))
-        self.setColor("grey")
+        self.setState("empty")  #default state
 
-        #set the default state of the cell (empty, wall, start, goal)
-        self.state = "empty"
+    def setState(self, state: str):
+        """Set the logical state and update the visual color accordingly."""
+        self.state = state
 
-    def setColor(self, color):
-        self.setBrush(QtGui.QBrush(QtGui.QColor(color)))
-        if(color == "black"):
-            self.state = "wall"
-        elif(color == "green"):
-            self.state = "start"
-        elif(color == "red"):
-            self.state = "goal"
-        else:
-            self.state = "empty"
-
+        if state == "wall":
+            self.setBrush(QtGui.QBrush(QtGui.QColor("black")))
+        elif state == "start":
+            self.setBrush(QtGui.QBrush(QtGui.QColor("green")))
+        elif state == "goal":
+            self.setBrush(QtGui.QBrush(QtGui.QColor("red")))
+        else:  #empty
+            self.setBrush(QtGui.QBrush(QtGui.QColor("grey")))
 
     def mousePressEvent(self, event):
         if event.button() == QtCore.Qt.LeftButton:
-            if(self.state == "wall"):
-                self.setColor("grey")
+            if self.state == "wall":
+                self.setState("empty")
+            elif self.state == "start":
+                self.window.start_cell = None
+                self.setState("wall")
+            elif self.state == "goal":
+                self.window.goal_cell = None
+                self.setState("wall")
             else:
-                self.setColor("black")
+                self.setState("wall")
 
         elif event.button() == QtCore.Qt.RightButton:
-            if(self.state == "goal"):
+            if self.state == "goal":
                 return
-            elif(self.window.start_cell is None): #if there does not already exist a starting cell
-                self.setColor("green")
+            if self.window.start_cell is None:  #no start yet in grid
+                self.setState("start")
                 self.window.start_cell = self
             else:
-                self.window.start_cell.setColor("grey")
-                self.setColor("green")
+                self.window.start_cell.setState("empty")
+                self.setState("start")
                 self.window.start_cell = self
 
         elif event.button() == QtCore.Qt.MiddleButton:
-            if(self.state == "start"):
+            if self.state == "start":
                 return
-            elif(self.window.goal_cell is None):  #if there does not already exist a goal cell
-                self.setColor("red")
+            if self.window.goal_cell is None:  #no goal yet in grid
+                self.setState("goal")
                 self.window.goal_cell = self
             else:
-                self.window.goal_cell.setColor("grey")
-                self.setColor("red")
+                self.window.goal_cell.setState("empty")
+                self.setState("goal")
                 self.window.goal_cell = self
 
 
@@ -73,12 +77,13 @@ class Window(QtWidgets.QWidget):
         layout = QtWidgets.QVBoxLayout(self)
         layout.addWidget(self.view)
 
-        #create 10x10 grid of size 50 cells
+        #create 20x20 grid of 50px cells
         cell_size = 50
         for row in range(20):
             for col in range(20):
                 cell = Cell(col * cell_size, row * cell_size, cell_size, row, col, self)
                 self.scene.addItem(cell)
+
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication([])
