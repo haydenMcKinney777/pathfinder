@@ -1,0 +1,2633 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.26100 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\Hayden\\source\\projects\\pathfinding\\.venv\\Scripts"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Crucial\\Crucial Storage Executive"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\Cppcheck\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\gs\\gs10.05.0\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\Scripts"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Hayden\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Hayden\\.dotnet\\tools"
+        - "c:\\Users\\Hayden\\.vscode\\extensions\\ms-python.debugpy-2025.10.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.14.19+164abd434 for .NET Framework
+      Build started 9/27/2025 1:28:12 PM.
+      
+      Project "C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\4.1.1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\4.1.1\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Done Building Project "C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\4.1.1\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:00.75
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/Hayden/source/projects/pathfinding/build/CMakeFiles/4.1.1/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Crucial/Crucial Storage Executive/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/MinGW/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/"
+      - "C:/Program Files/MATLAB/R2024b/bin/"
+      - "C:/Program Files/Cppcheck/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/gs/gs10.05.0/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Scripts/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/Hayden/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/Hayden/AppData/Roaming/npm/"
+      - "C:/Users/Hayden/.dotnet/tools/"
+      - "C:/Users/Hayden/.vscode/extensions/ms-python.debugpy-2025.10.0-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Program Files/CMake/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\Hayden\\source\\projects\\pathfinding\\.venv\\Scripts"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Crucial\\Crucial Storage Executive"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\Cppcheck\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\gs\\gs10.05.0\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\Scripts"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Hayden\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Hayden\\.dotnet\\tools"
+        - "c:\\Users\\Hayden\\.vscode\\extensions\\ms-python.debugpy-2025.10.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Crucial/Crucial Storage Executive/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/MinGW/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/"
+      - "C:/Program Files/MATLAB/R2024b/bin/"
+      - "C:/Program Files/Cppcheck/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/gs/gs10.05.0/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Scripts/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/Hayden/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/Hayden/AppData/Roaming/npm/"
+      - "C:/Users/Hayden/.dotnet/tools/"
+      - "C:/Users/Hayden/.vscode/extensions/ms-python.debugpy-2025.10.0-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Program Files/CMake/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/lld-link.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/lld-link.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/lld-link"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files/Crucial/Crucial Storage Executive/lld-link.com"
+      - "C:/Program Files/Crucial/Crucial Storage Executive/lld-link.exe"
+      - "C:/Program Files/Crucial/Crucial Storage Executive/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
+      - "C:/MinGW/bin/lld-link.com"
+      - "C:/MinGW/bin/lld-link.exe"
+      - "C:/MinGW/bin/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/lld-link"
+      - "C:/Program Files/MATLAB/R2024b/bin/lld-link.com"
+      - "C:/Program Files/MATLAB/R2024b/bin/lld-link.exe"
+      - "C:/Program Files/MATLAB/R2024b/bin/lld-link"
+      - "C:/Program Files/Cppcheck/lld-link.com"
+      - "C:/Program Files/Cppcheck/lld-link.exe"
+      - "C:/Program Files/Cppcheck/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Program Files/gs/gs10.05.0/bin/lld-link.com"
+      - "C:/Program Files/gs/gs10.05.0/bin/lld-link.exe"
+      - "C:/Program Files/gs/gs10.05.0/bin/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Scripts/lld-link.com"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Scripts/lld-link.exe"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Scripts/lld-link"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/lld-link.com"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/lld-link.exe"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/lld-link"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/Scripts/lld-link.com"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/Scripts/lld-link.exe"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/Scripts/lld-link"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/lld-link.com"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/lld-link.exe"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/lld-link"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link.com"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link.exe"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Launcher/lld-link.com"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Launcher/lld-link.exe"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Launcher/lld-link"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/Hayden/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/Hayden/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/Hayden/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/Hayden/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/lld-link.com"
+      - "C:/Users/Hayden/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/lld-link.exe"
+      - "C:/Users/Hayden/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/lld-link"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/lld-link.com"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/lld-link.exe"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/lld-link"
+      - "C:/Users/Hayden/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/Hayden/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/Hayden/AppData/Roaming/npm/lld-link"
+      - "C:/Users/Hayden/.dotnet/tools/lld-link.com"
+      - "C:/Users/Hayden/.dotnet/tools/lld-link.exe"
+      - "C:/Users/Hayden/.dotnet/tools/lld-link"
+      - "C:/Users/Hayden/.vscode/extensions/ms-python.debugpy-2025.10.0-win32-x64/bundled/scripts/noConfigScripts/lld-link.com"
+      - "C:/Users/Hayden/.vscode/extensions/ms-python.debugpy-2025.10.0-win32-x64/bundled/scripts/noConfigScripts/lld-link.exe"
+      - "C:/Users/Hayden/.vscode/extensions/ms-python.debugpy-2025.10.0-win32-x64/bundled/scripts/noConfigScripts/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\Hayden\\source\\projects\\pathfinding\\.venv\\Scripts"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Crucial\\Crucial Storage Executive"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\Cppcheck\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\gs\\gs10.05.0\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\Scripts"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Hayden\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Hayden\\.dotnet\\tools"
+        - "c:\\Users\\Hayden\\.vscode\\extensions\\ms-python.debugpy-2025.10.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Crucial/Crucial Storage Executive/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/MinGW/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/"
+      - "C:/Program Files/MATLAB/R2024b/bin/"
+      - "C:/Program Files/Cppcheck/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/gs/gs10.05.0/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Scripts/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/Hayden/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/Hayden/AppData/Roaming/npm/"
+      - "C:/Users/Hayden/.dotnet/tools/"
+      - "C:/Users/Hayden/.vscode/extensions/ms-python.debugpy-2025.10.0-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Program Files/CMake/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\Hayden\\source\\projects\\pathfinding\\.venv\\Scripts"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Crucial\\Crucial Storage Executive"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\Cppcheck\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\gs\\gs10.05.0\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\Scripts"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Hayden\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Hayden\\.dotnet\\tools"
+        - "c:\\Users\\Hayden\\.vscode\\extensions\\ms-python.debugpy-2025.10.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Crucial/Crucial Storage Executive/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/MinGW/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/"
+      - "C:/Program Files/MATLAB/R2024b/bin/"
+      - "C:/Program Files/Cppcheck/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/gs/gs10.05.0/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Scripts/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/Hayden/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/Hayden/AppData/Roaming/npm/"
+      - "C:/Users/Hayden/.dotnet/tools/"
+      - "C:/Users/Hayden/.vscode/extensions/ms-python.debugpy-2025.10.0-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Program Files/CMake/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/mt.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/mt.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/mt"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/mt.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/mt.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/mt"
+      - "C:/Windows/System32/mt.com"
+      - "C:/Windows/System32/mt.exe"
+      - "C:/Windows/System32/mt"
+      - "C:/Windows/mt.com"
+      - "C:/Windows/mt.exe"
+      - "C:/Windows/mt"
+      - "C:/Windows/System32/wbem/mt.com"
+      - "C:/Windows/System32/wbem/mt.exe"
+      - "C:/Windows/System32/wbem/mt"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt"
+      - "C:/Windows/System32/OpenSSH/mt.com"
+      - "C:/Windows/System32/OpenSSH/mt.exe"
+      - "C:/Windows/System32/OpenSSH/mt"
+      - "C:/Program Files/dotnet/mt.com"
+      - "C:/Program Files/dotnet/mt.exe"
+      - "C:/Program Files/dotnet/mt"
+      - "C:/Program Files/Crucial/Crucial Storage Executive/mt.com"
+      - "C:/Program Files/Crucial/Crucial Storage Executive/mt.exe"
+      - "C:/Program Files/Crucial/Crucial Storage Executive/mt"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt"
+      - "C:/MinGW/bin/mt.com"
+      - "C:/MinGW/bin/mt.exe"
+      - "C:/MinGW/bin/mt"
+      - "C:/Program Files/Git/cmd/mt.com"
+      - "C:/Program Files/Git/cmd/mt.exe"
+      - "C:/Program Files/Git/cmd/mt"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/mt.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/mt.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/mt"
+      - "C:/Program Files/MATLAB/R2024b/bin/mt.com"
+      - "C:/Program Files/MATLAB/R2024b/bin/mt.exe"
+      - "C:/Program Files/MATLAB/R2024b/bin/mt"
+      - "C:/Program Files/Cppcheck/mt.com"
+      - "C:/Program Files/Cppcheck/mt.exe"
+      - "C:/Program Files/Cppcheck/mt"
+      - "C:/Program Files/nodejs/mt.com"
+      - "C:/Program Files/nodejs/mt.exe"
+      - "C:/Program Files/nodejs/mt"
+      - "C:/Program Files/gs/gs10.05.0/bin/mt.com"
+      - "C:/Program Files/gs/gs10.05.0/bin/mt.exe"
+      - "C:/Program Files/gs/gs10.05.0/bin/mt"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Scripts/mt.com"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Scripts/mt.exe"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Scripts/mt"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/mt.com"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/mt.exe"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/mt"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/Scripts/mt.com"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/Scripts/mt.exe"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/Scripts/mt"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/mt.com"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/mt.exe"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/mt"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/mt.com"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/mt.exe"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/mt"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Launcher/mt.com"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Launcher/mt.exe"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Launcher/mt"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WindowsApps/mt"
+      - "C:/Users/Hayden/AppData/Local/Programs/Microsoft VS Code/bin/mt.com"
+      - "C:/Users/Hayden/AppData/Local/Programs/Microsoft VS Code/bin/mt.exe"
+      - "C:/Users/Hayden/AppData/Local/Programs/Microsoft VS Code/bin/mt"
+      - "C:/Users/Hayden/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/mt.com"
+      - "C:/Users/Hayden/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/mt.exe"
+      - "C:/Users/Hayden/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/mt"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/mt.com"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/mt.exe"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/mt"
+      - "C:/Users/Hayden/AppData/Roaming/npm/mt.com"
+      - "C:/Users/Hayden/AppData/Roaming/npm/mt.exe"
+      - "C:/Users/Hayden/AppData/Roaming/npm/mt"
+      - "C:/Users/Hayden/.dotnet/tools/mt.com"
+      - "C:/Users/Hayden/.dotnet/tools/mt.exe"
+      - "C:/Users/Hayden/.dotnet/tools/mt"
+      - "C:/Users/Hayden/.vscode/extensions/ms-python.debugpy-2025.10.0-win32-x64/bundled/scripts/noConfigScripts/mt.com"
+      - "C:/Users/Hayden/.vscode/extensions/ms-python.debugpy-2025.10.0-win32-x64/bundled/scripts/noConfigScripts/mt.exe"
+      - "C:/Users/Hayden/.vscode/extensions/ms-python.debugpy-2025.10.0-win32-x64/bundled/scripts/noConfigScripts/mt"
+      - "C:/Program Files/CMake/bin/mt.com"
+      - "C:/Program Files/CMake/bin/mt.exe"
+      - "C:/Program Files/CMake/bin/mt"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\Hayden\\source\\projects\\pathfinding\\.venv\\Scripts"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Crucial\\Crucial Storage Executive"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\Cppcheck\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\gs\\gs10.05.0\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\Scripts"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Hayden\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Hayden\\.dotnet\\tools"
+        - "c:\\Users\\Hayden\\.vscode\\extensions\\ms-python.debugpy-2025.10.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Crucial/Crucial Storage Executive/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/MinGW/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/"
+      - "C:/Program Files/MATLAB/R2024b/bin/"
+      - "C:/Program Files/Cppcheck/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/gs/gs10.05.0/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Scripts/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/Hayden/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/Hayden/AppData/Roaming/npm/"
+      - "C:/Users/Hayden/.dotnet/tools/"
+      - "C:/Users/Hayden/.vscode/extensions/ms-python.debugpy-2025.10.0-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Program Files/CMake/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\Hayden\\source\\projects\\pathfinding\\.venv\\Scripts"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Crucial\\Crucial Storage Executive"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\Cppcheck\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\gs\\gs10.05.0\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\Scripts"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Hayden\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Hayden\\.dotnet\\tools"
+        - "c:\\Users\\Hayden\\.vscode\\extensions\\ms-python.debugpy-2025.10.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\Hayden\\source\\projects\\pathfinding\\.venv\\Scripts"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Crucial\\Crucial Storage Executive"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\Cppcheck\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\gs\\gs10.05.0\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\Scripts"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Hayden\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Hayden\\.dotnet\\tools"
+        - "c:\\Users\\Hayden\\.vscode\\extensions\\ms-python.debugpy-2025.10.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.14.19+164abd434 for .NET Framework
+      Build started 9/27/2025 1:28:13 PM.
+      
+      Project "C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\4.1.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\4.1.1\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\4.1.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:00.41
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/Hayden/source/projects/pathfinding/build/CMakeFiles/4.1.1/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Crucial/Crucial Storage Executive/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/MinGW/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/"
+      - "C:/Program Files/MATLAB/R2024b/bin/"
+      - "C:/Program Files/Cppcheck/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/gs/gs10.05.0/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Scripts/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/Hayden/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/Hayden/AppData/Roaming/npm/"
+      - "C:/Users/Hayden/.dotnet/tools/"
+      - "C:/Users/Hayden/.vscode/extensions/ms-python.debugpy-2025.10.0-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Program Files/CMake/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/lld-link.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/lld-link.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/lld-link"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files/Crucial/Crucial Storage Executive/lld-link.com"
+      - "C:/Program Files/Crucial/Crucial Storage Executive/lld-link.exe"
+      - "C:/Program Files/Crucial/Crucial Storage Executive/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
+      - "C:/MinGW/bin/lld-link.com"
+      - "C:/MinGW/bin/lld-link.exe"
+      - "C:/MinGW/bin/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/lld-link"
+      - "C:/Program Files/MATLAB/R2024b/bin/lld-link.com"
+      - "C:/Program Files/MATLAB/R2024b/bin/lld-link.exe"
+      - "C:/Program Files/MATLAB/R2024b/bin/lld-link"
+      - "C:/Program Files/Cppcheck/lld-link.com"
+      - "C:/Program Files/Cppcheck/lld-link.exe"
+      - "C:/Program Files/Cppcheck/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Program Files/gs/gs10.05.0/bin/lld-link.com"
+      - "C:/Program Files/gs/gs10.05.0/bin/lld-link.exe"
+      - "C:/Program Files/gs/gs10.05.0/bin/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Scripts/lld-link.com"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Scripts/lld-link.exe"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Scripts/lld-link"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/lld-link.com"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/lld-link.exe"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/lld-link"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/Scripts/lld-link.com"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/Scripts/lld-link.exe"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/Scripts/lld-link"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/lld-link.com"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/lld-link.exe"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/lld-link"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link.com"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link.exe"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Launcher/lld-link.com"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Launcher/lld-link.exe"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Launcher/lld-link"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/Hayden/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/Hayden/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/Hayden/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/Hayden/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/lld-link.com"
+      - "C:/Users/Hayden/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/lld-link.exe"
+      - "C:/Users/Hayden/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/lld-link"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/lld-link.com"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/lld-link.exe"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/lld-link"
+      - "C:/Users/Hayden/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/Hayden/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/Hayden/AppData/Roaming/npm/lld-link"
+      - "C:/Users/Hayden/.dotnet/tools/lld-link.com"
+      - "C:/Users/Hayden/.dotnet/tools/lld-link.exe"
+      - "C:/Users/Hayden/.dotnet/tools/lld-link"
+      - "C:/Users/Hayden/.vscode/extensions/ms-python.debugpy-2025.10.0-win32-x64/bundled/scripts/noConfigScripts/lld-link.com"
+      - "C:/Users/Hayden/.vscode/extensions/ms-python.debugpy-2025.10.0-win32-x64/bundled/scripts/noConfigScripts/lld-link.exe"
+      - "C:/Users/Hayden/.vscode/extensions/ms-python.debugpy-2025.10.0-win32-x64/bundled/scripts/noConfigScripts/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\Hayden\\source\\projects\\pathfinding\\.venv\\Scripts"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Crucial\\Crucial Storage Executive"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\Cppcheck\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\gs\\gs10.05.0\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\Scripts"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Hayden\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Hayden\\.dotnet\\tools"
+        - "c:\\Users\\Hayden\\.vscode\\extensions\\ms-python.debugpy-2025.10.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC.cmake:574 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC.cmake:547 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC-C.cmake:5 (__windows_compiler_msvc)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCInformation.cmake:48 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Crucial/Crucial Storage Executive/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/MinGW/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/"
+      - "C:/Program Files/MATLAB/R2024b/bin/"
+      - "C:/Program Files/Cppcheck/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/gs/gs10.05.0/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Scripts/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/Hayden/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/Hayden/AppData/Roaming/npm/"
+      - "C:/Users/Hayden/.dotnet/tools/"
+      - "C:/Users/Hayden/.vscode/extensions/ms-python.debugpy-2025.10.0-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/pathfinder/bin/"
+      - "C:/Program Files (x86)/pathfinder/sbin/"
+      - "C:/Program Files (x86)/pathfinder/"
+    searched_directories:
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/rc.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/rc.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/rc"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/rc.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/rc.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/rc"
+      - "C:/Windows/System32/rc.com"
+      - "C:/Windows/System32/rc.exe"
+      - "C:/Windows/System32/rc"
+      - "C:/Windows/rc.com"
+      - "C:/Windows/rc.exe"
+      - "C:/Windows/rc"
+      - "C:/Windows/System32/wbem/rc.com"
+      - "C:/Windows/System32/wbem/rc.exe"
+      - "C:/Windows/System32/wbem/rc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc"
+      - "C:/Windows/System32/OpenSSH/rc.com"
+      - "C:/Windows/System32/OpenSSH/rc.exe"
+      - "C:/Windows/System32/OpenSSH/rc"
+      - "C:/Program Files/dotnet/rc.com"
+      - "C:/Program Files/dotnet/rc.exe"
+      - "C:/Program Files/dotnet/rc"
+      - "C:/Program Files/Crucial/Crucial Storage Executive/rc.com"
+      - "C:/Program Files/Crucial/Crucial Storage Executive/rc.exe"
+      - "C:/Program Files/Crucial/Crucial Storage Executive/rc"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc"
+      - "C:/MinGW/bin/rc.com"
+      - "C:/MinGW/bin/rc.exe"
+      - "C:/MinGW/bin/rc"
+      - "C:/Program Files/Git/cmd/rc.com"
+      - "C:/Program Files/Git/cmd/rc.exe"
+      - "C:/Program Files/Git/cmd/rc"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/rc.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/rc.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/rc"
+      - "C:/Program Files/MATLAB/R2024b/bin/rc.com"
+      - "C:/Program Files/MATLAB/R2024b/bin/rc.exe"
+      - "C:/Program Files/MATLAB/R2024b/bin/rc"
+      - "C:/Program Files/Cppcheck/rc.com"
+      - "C:/Program Files/Cppcheck/rc.exe"
+      - "C:/Program Files/Cppcheck/rc"
+      - "C:/Program Files/nodejs/rc.com"
+      - "C:/Program Files/nodejs/rc.exe"
+      - "C:/Program Files/nodejs/rc"
+      - "C:/Program Files/gs/gs10.05.0/bin/rc.com"
+      - "C:/Program Files/gs/gs10.05.0/bin/rc.exe"
+      - "C:/Program Files/gs/gs10.05.0/bin/rc"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Scripts/rc.com"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Scripts/rc.exe"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Scripts/rc"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/rc.com"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/rc.exe"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/rc"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/Scripts/rc.com"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/Scripts/rc.exe"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/Scripts/rc"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/rc.com"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/rc.exe"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/rc"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/rc.com"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/rc.exe"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/rc"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Launcher/rc.com"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Launcher/rc.exe"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Launcher/rc"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WindowsApps/rc"
+      - "C:/Users/Hayden/AppData/Local/Programs/Microsoft VS Code/bin/rc.com"
+      - "C:/Users/Hayden/AppData/Local/Programs/Microsoft VS Code/bin/rc.exe"
+      - "C:/Users/Hayden/AppData/Local/Programs/Microsoft VS Code/bin/rc"
+      - "C:/Users/Hayden/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/rc.com"
+      - "C:/Users/Hayden/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/rc.exe"
+      - "C:/Users/Hayden/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/rc"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/rc.com"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/rc.exe"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/rc"
+      - "C:/Users/Hayden/AppData/Roaming/npm/rc.com"
+      - "C:/Users/Hayden/AppData/Roaming/npm/rc.exe"
+      - "C:/Users/Hayden/AppData/Roaming/npm/rc"
+      - "C:/Users/Hayden/.dotnet/tools/rc.com"
+      - "C:/Users/Hayden/.dotnet/tools/rc.exe"
+      - "C:/Users/Hayden/.dotnet/tools/rc"
+      - "C:/Users/Hayden/.vscode/extensions/ms-python.debugpy-2025.10.0-win32-x64/bundled/scripts/noConfigScripts/rc.com"
+      - "C:/Users/Hayden/.vscode/extensions/ms-python.debugpy-2025.10.0-win32-x64/bundled/scripts/noConfigScripts/rc.exe"
+      - "C:/Users/Hayden/.vscode/extensions/ms-python.debugpy-2025.10.0-win32-x64/bundled/scripts/noConfigScripts/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/bin/rc.com"
+      - "C:/Program Files/bin/rc.exe"
+      - "C:/Program Files/bin/rc"
+      - "C:/Program Files/sbin/rc.com"
+      - "C:/Program Files/sbin/rc.exe"
+      - "C:/Program Files/sbin/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files (x86)/bin/rc.com"
+      - "C:/Program Files (x86)/bin/rc.exe"
+      - "C:/Program Files (x86)/bin/rc"
+      - "C:/Program Files (x86)/sbin/rc.com"
+      - "C:/Program Files (x86)/sbin/rc.exe"
+      - "C:/Program Files (x86)/sbin/rc"
+      - "C:/Program Files (x86)/rc.com"
+      - "C:/Program Files (x86)/rc.exe"
+      - "C:/Program Files (x86)/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/CMake/sbin/rc.com"
+      - "C:/Program Files/CMake/sbin/rc.exe"
+      - "C:/Program Files/CMake/sbin/rc"
+      - "C:/Program Files/CMake/rc.com"
+      - "C:/Program Files/CMake/rc.exe"
+      - "C:/Program Files/CMake/rc"
+      - "C:/Program Files (x86)/pathfinder/bin/rc.com"
+      - "C:/Program Files (x86)/pathfinder/bin/rc.exe"
+      - "C:/Program Files (x86)/pathfinder/bin/rc"
+      - "C:/Program Files (x86)/pathfinder/sbin/rc.com"
+      - "C:/Program Files (x86)/pathfinder/sbin/rc.exe"
+      - "C:/Program Files (x86)/pathfinder/sbin/rc"
+      - "C:/Program Files (x86)/pathfinder/rc.com"
+      - "C:/Program Files (x86)/pathfinder/rc.exe"
+      - "C:/Program Files (x86)/pathfinder/rc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\Hayden\\source\\projects\\pathfinding\\.venv\\Scripts"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Crucial\\Crucial Storage Executive"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\Cppcheck\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\gs\\gs10.05.0\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\Scripts"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Hayden\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Hayden\\.dotnet\\tools"
+        - "c:\\Users\\Hayden\\.vscode\\extensions\\ms-python.debugpy-2025.10.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\CMake\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/pathfinder"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/pathfinder"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/Hayden/source/projects/pathfinding/build/CMakeFiles/CMakeScratch/TryCompile-3c7p29"
+      binary: "C:/Users/Hayden/source/projects/pathfinding/build/CMakeFiles/CMakeScratch/TryCompile-3c7p29"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Hayden/source/projects/pathfinding/build/CMakeFiles/CMakeScratch/TryCompile-3c7p29'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_01424.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.19+164abd434 for .NET Framework
+        Build started 9/27/2025 1:28:14 PM.
+        
+        Project "C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3c7p29\\cmTC_01424.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_01424.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3c7p29\\Debug\\".
+          Creating directory "cmTC_01424.dir\\Debug\\cmTC_01424.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_01424.dir\\Debug\\cmTC_01424.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_01424.dir\\Debug\\cmTC_01424.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_01424.dir\\Debug\\\\" /Fd"cmTC_01424.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35215 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_01424.dir\\Debug\\\\" /Fd"cmTC_01424.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3c7p29\\Debug\\cmTC_01424.exe" /INCREMENTAL /ILK:"cmTC_01424.dir\\Debug\\cmTC_01424.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Hayden/source/projects/pathfinding/build/CMakeFiles/CMakeScratch/TryCompile-3c7p29/Debug/cmTC_01424.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Hayden/source/projects/pathfinding/build/CMakeFiles/CMakeScratch/TryCompile-3c7p29/Debug/cmTC_01424.lib" /MACHINE:X64  /machine:x64 cmTC_01424.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_01424.vcxproj -> C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3c7p29\\Debug\\cmTC_01424.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_01424.dir\\Debug\\cmTC_01424.tlog\\unsuccessfulbuild".
+          Touching "cmTC_01424.dir\\Debug\\cmTC_01424.tlog\\cmTC_01424.lastbuildstate".
+        Done Building Project "C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3c7p29\\cmTC_01424.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.38
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35215.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/Hayden/source/projects/pathfinding/build/CMakeFiles/CMakeScratch/TryCompile-snai7y"
+      binary: "C:/Users/Hayden/source/projects/pathfinding/build/CMakeFiles/CMakeScratch/TryCompile-snai7y"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Hayden/source/projects/pathfinding/build/CMakeFiles/CMakeScratch/TryCompile-snai7y'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_02f87.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.19+164abd434 for .NET Framework
+        Build started 9/27/2025 1:28:14 PM.
+        
+        Project "C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\CMakeScratch\\TryCompile-snai7y\\cmTC_02f87.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_02f87.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\CMakeScratch\\TryCompile-snai7y\\Debug\\".
+          Creating directory "cmTC_02f87.dir\\Debug\\cmTC_02f87.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_02f87.dir\\Debug\\cmTC_02f87.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_02f87.dir\\Debug\\cmTC_02f87.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_02f87.dir\\Debug\\\\" /Fd"cmTC_02f87.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35215 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_02f87.dir\\Debug\\\\" /Fd"cmTC_02f87.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\CMakeScratch\\TryCompile-snai7y\\Debug\\cmTC_02f87.exe" /INCREMENTAL /ILK:"cmTC_02f87.dir\\Debug\\cmTC_02f87.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Hayden/source/projects/pathfinding/build/CMakeFiles/CMakeScratch/TryCompile-snai7y/Debug/cmTC_02f87.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Hayden/source/projects/pathfinding/build/CMakeFiles/CMakeScratch/TryCompile-snai7y/Debug/cmTC_02f87.lib" /MACHINE:X64  /machine:x64 cmTC_02f87.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_02f87.vcxproj -> C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\CMakeScratch\\TryCompile-snai7y\\Debug\\cmTC_02f87.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_02f87.dir\\Debug\\cmTC_02f87.tlog\\unsuccessfulbuild".
+          Touching "cmTC_02f87.dir\\Debug\\cmTC_02f87.tlog\\cmTC_02f87.lastbuildstate".
+        Done Building Project "C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\CMakeScratch\\TryCompile-snai7y\\cmTC_02f87.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.37
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35215.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindPython/Support.cmake:2015 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindPython3.cmake:656 (include)"
+      - "CMakeLists.txt:6 (find_package)"
+    mode: "program"
+    variable: "_Python3_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "python3.14"
+      - "python3.13"
+      - "python3.12"
+      - "python3.11"
+      - "python3.10"
+      - "python3.9"
+      - "python3.8"
+      - "python3.7"
+      - "python3.6"
+      - "python3.5"
+      - "python3.4"
+      - "python3.3"
+      - "python3.2"
+      - "python3.1"
+      - "python3.0"
+      - "python3"
+      - "python"
+      - "ipy3.14"
+      - "ipy3.13"
+      - "ipy3.12"
+      - "ipy3.11"
+      - "ipy3.10"
+      - "ipy3.9"
+      - "ipy3.8"
+      - "ipy3.7"
+      - "ipy3.6"
+      - "ipy3.5"
+      - "ipy3.4"
+      - "ipy3.3"
+      - "ipy3.2"
+      - "ipy3.1"
+      - "ipy3.0"
+      - "ipy3"
+      - "ipy64"
+      - "ipy32"
+      - "ipy"
+      - "ipy.exe"
+    candidate_directories:
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/share/ironpython3.14/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/share/ironpython3.13/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/share/ironpython3.12/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/share/ironpython3.11/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/share/ironpython3.10/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/share/ironpython3.9/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/share/ironpython3.8/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/share/ironpython3.7/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/share/ironpython3.6/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/share/ironpython3.5/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/share/ironpython3.4/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/share/ironpython3.3/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/share/ironpython3.2/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/share/ironpython3.1/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/share/ironpython3.0/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/net45/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/net40/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/"
+    searched_directories:
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.14.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.14.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.14"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.13.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.13.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.13"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.12.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.12.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.12"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.11.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.11.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.11"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.10.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.10.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.10"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.9.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.9.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.9"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.8.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.8.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.8"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.7.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.7.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.7"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.6.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.6.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.6"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.5.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.5.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.5"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.4.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.4.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.4"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.3.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.3.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.3"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.2.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.2.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.2"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.1.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.1.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.1"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.0.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.0.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.0"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python3"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/python"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.14.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.14.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.14"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.13.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.13.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.13"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.12.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.12.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.12"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.11.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.11.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.11"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.10.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.10.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.10"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.9.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.9.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.9"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.8.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.8.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.8"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.7.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.7.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.7"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.6.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.6.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.6"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.5.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.5.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.5"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.4.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.4.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.4"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.3.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.3.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.3"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.2.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.2.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.2"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.1.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.1.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.1"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.0.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.0.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.0"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy3"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy64.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy64.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy64"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy32.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy32.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy32"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy.exe.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/bin/ipy.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.14.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.14.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.14"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.13.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.13.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.13"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.12.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.12.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.12"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.11.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.11.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.11"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.10.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.10.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.10"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.9.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.9.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.9"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.8.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.8.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.8"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.7.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.7.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.7"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.6.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.6.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.6"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.5.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.5.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.5"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.4.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.4.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.4"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.3.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.3.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.3"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.2.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.2.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.2"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.1.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.1.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.1"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.0.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.0.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.0"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python.com"
+    found: "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\Hayden\\source\\projects\\pathfinding\\.venv\\Scripts"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Crucial\\Crucial Storage Executive"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\Cppcheck\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\gs\\gs10.05.0\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\Scripts"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Hayden\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Hayden\\.dotnet\\tools"
+        - "c:\\Users\\Hayden\\.vscode\\extensions\\ms-python.debugpy-2025.10.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\CMake\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/pathfinder"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/pathfinder"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindPython/Support.cmake:2430 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindPython3.cmake:656 (include)"
+      - "CMakeLists.txt:6 (find_package)"
+    mode: "program"
+    variable: "_Python3_EXECUTABLE_DEBUG"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "python3.9_d"
+      - "python3_d"
+      - "python_d"
+    candidate_directories:
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/"
+    searched_directories:
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.9_d.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.9_d.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3.9_d"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3_d.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3_d.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python3_d"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python_d.com"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python_d.exe"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/python_d"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\Hayden\\source\\projects\\pathfinding\\.venv\\Scripts"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Crucial\\Crucial Storage Executive"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\Cppcheck\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\gs\\gs10.05.0\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\Scripts"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Hayden\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Hayden\\.dotnet\\tools"
+        - "c:\\Users\\Hayden\\.vscode\\extensions\\ms-python.debugpy-2025.10.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\CMake\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/pathfinder"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/pathfinder"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindPython/Support.cmake:3194 (find_library)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindPython3.cmake:656 (include)"
+      - "CMakeLists.txt:6 (find_package)"
+    mode: "library"
+    variable: "_Python3_LIBRARY_RELEASE"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "python39"
+      - "python3.9"
+    candidate_directories:
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/lib/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/libs/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/lib/python3.9/config-3.9/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/lib/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/libs/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/lib/python3.9/config-3.9/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/"
+    searched_directories:
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/lib/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/lib/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/libs/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/libs/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/lib/python3.9/config-3.9/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/lib/python3.9/config-3.9/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/lib/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/lib/"
+    found: "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/libs/python39.lib"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\Hayden\\source\\projects\\pathfinding\\.venv\\Scripts"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Crucial\\Crucial Storage Executive"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\Cppcheck\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\gs\\gs10.05.0\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\Scripts"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Hayden\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Hayden\\.dotnet\\tools"
+        - "c:\\Users\\Hayden\\.vscode\\extensions\\ms-python.debugpy-2025.10.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\CMake\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/pathfinder"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/pathfinder"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/pathfinder/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindPython/Support.cmake:3382 (find_library)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindPython3.cmake:656 (include)"
+      - "CMakeLists.txt:6 (find_package)"
+    mode: "library"
+    variable: "_Python3_LIBRARY_DEBUG"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "python39_d"
+    candidate_directories:
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/libs/"
+    searched_directories:
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/libs/"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\Hayden\\source\\projects\\pathfinding\\.venv\\Scripts"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Crucial\\Crucial Storage Executive"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\Cppcheck\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\gs\\gs10.05.0\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\Scripts"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Hayden\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Hayden\\.dotnet\\tools"
+        - "c:\\Users\\Hayden\\.vscode\\extensions\\ms-python.debugpy-2025.10.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\CMake\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/pathfinder"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/pathfinder"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/pathfinder/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindPython/Support.cmake:1403 (find_library)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindPython/Support.cmake:3400 (_python_find_runtime_library)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindPython3.cmake:656 (include)"
+      - "CMakeLists.txt:6 (find_package)"
+    mode: "library"
+    variable: "_Python3_RUNTIME_LIBRARY_RELEASE"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "python39"
+      - "python3.9"
+    candidate_directories:
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/libs/bin/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/libs/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/bin/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/bin/"
+      - "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/bin/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/bin/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/bin/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/bin/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/bin/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/dotnet/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Crucial/Crucial Storage Executive/bin/"
+      - "C:/Program Files/Crucial/Crucial Storage Executive/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/bin/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/MinGW/bin/bin/"
+      - "C:/MinGW/bin/"
+      - "C:/Program Files/Git/cmd/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/bin/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/"
+      - "C:/Program Files/MATLAB/R2024b/bin/bin/"
+      - "C:/Program Files/MATLAB/R2024b/bin/"
+      - "C:/Program Files/Cppcheck/bin/"
+      - "C:/Program Files/Cppcheck/"
+      - "C:/Program Files/nodejs/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/gs/gs10.05.0/bin/bin/"
+      - "C:/Program Files/gs/gs10.05.0/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Scripts/bin/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Scripts/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/Scripts/bin/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/bin/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/bin/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Launcher/bin/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WindowsApps/bin/"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Microsoft VS Code/bin/bin/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/Hayden/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/bin/"
+      - "C:/Users/Hayden/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/"
+      - "C:/Users/Hayden/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/Hayden/AppData/Roaming/npm/bin/"
+      - "C:/Users/Hayden/AppData/Roaming/npm/"
+      - "C:/Users/Hayden/.dotnet/tools/bin/"
+      - "C:/Users/Hayden/.dotnet/tools/"
+      - "C:/Users/Hayden/.vscode/extensions/ms-python.debugpy-2025.10.0-win32-x64/bundled/scripts/noConfigScripts/bin/"
+      - "C:/Users/Hayden/.vscode/extensions/ms-python.debugpy-2025.10.0-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Program Files/CMake/bin/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/lib/bin/"
+      - "C:/Program Files/lib/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/lib/bin/"
+      - "C:/Program Files (x86)/lib/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/lib/bin/"
+      - "C:/Program Files/CMake/lib/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/pathfinder/lib/bin/"
+      - "C:/Program Files (x86)/pathfinder/lib/"
+      - "C:/Program Files (x86)/pathfinder/bin/"
+      - "C:/Program Files (x86)/pathfinder/"
+      - "C:/Program Files (x86)/pathfinder/bin/bin/"
+      - "C:/Program Files (x86)/pathfinder/bin/"
+      - "/bin/bin/"
+      - "/bin/"
+    searched_directories:
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/libs/bin/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/libs/bin/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/libs/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/libs/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/bin/"
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/bin/"
+    found: "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/python39.dll"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\Hayden\\source\\projects\\pathfinding\\.venv\\Scripts"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Crucial\\Crucial Storage Executive"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\Cppcheck\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\gs\\gs10.05.0\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\Scripts"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Hayden\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Hayden\\.dotnet\\tools"
+        - "c:\\Users\\Hayden\\.vscode\\extensions\\ms-python.debugpy-2025.10.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\CMake\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/pathfinder"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/pathfinder"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/pathfinder/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindPython/Support.cmake:3709 (find_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindPython3.cmake:656 (include)"
+      - "CMakeLists.txt:6 (find_package)"
+    mode: "path"
+    variable: "_Python3_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "Python.h"
+    candidate_directories:
+      - "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Include/"
+    found: "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Include/"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\Hayden\\source\\projects\\pathfinding\\.venv\\Scripts"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Crucial\\Crucial Storage Executive"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\Cppcheck\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\gs\\gs10.05.0\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\Scripts"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Hayden\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Hayden\\.dotnet\\tools"
+        - "c:\\Users\\Hayden\\.vscode\\extensions\\ms-python.debugpy-2025.10.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\CMake\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/pathfinder"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/pathfinder"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:7 (find_package)"
+    name: "pybind11"
+    configs:
+      -
+        filename: "pybind11Config.cmake"
+        kind: "cmake"
+      -
+        filename: "pybind11-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "pybind11"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "C:/Users/Hayden/source/projects/pathfinding/build/CMakeFiles/pkgRedirects/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Hayden/source/projects/pathfinding/build/CMakeFiles/pkgRedirects/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Hayden/source/projects/pathfinding/.venv/Scripts/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Common Files/Oracle/Java/javapath/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Common Files/Oracle/Java/javapath/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Crucial/Crucial Storage Executive/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Crucial/Crucial Storage Executive/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/MinGW/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/MinGW/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/MATLAB/R2024b/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/MATLAB/R2024b/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Cppcheck/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Cppcheck/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/nodejs/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/nodejs/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/gs/gs10.05.0/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/gs/gs10.05.0/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Scripts/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/Scripts/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Hayden/AppData/Local/Programs/Python/Python39/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/Scripts/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/Scripts/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Hayden/AppData/Local/Programs/Python/Python310/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/MySQL/MySQL Shell 8.0/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/MySQL/MySQL Shell 8.0/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Hayden/AppData/Local/Programs/Python/Launcher/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Hayden/AppData/Local/Programs/Python/Launcher/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Hayden/AppData/Local/Microsoft/WindowsApps/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Hayden/AppData/Local/Microsoft/WindowsApps/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Hayden/AppData/Local/Programs/Microsoft VS Code/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Hayden/AppData/Local/Programs/Microsoft VS Code/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Hayden/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Hayden/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Hayden/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Hayden/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Hayden/.vscode/extensions/ms-python.debugpy-2025.10.0-win32-x64/bundled/scripts/noConfigScripts/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Hayden/.vscode/extensions/ms-python.debugpy-2025.10.0-win32-x64/bundled/scripts/noConfigScripts/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\Hayden\\source\\projects\\pathfinding\\.venv\\Scripts"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Crucial\\Crucial Storage Executive"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\Cppcheck\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\gs\\gs10.05.0\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python39\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Python310\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\Scripts"
+        - "C:\\Users\\Hayden\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Hayden\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Hayden\\.dotnet\\tools"
+        - "c:\\Users\\Hayden\\.vscode\\extensions\\ms-python.debugpy-2025.10.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\CMake\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/pathfinder"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/pathfinder"
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
+      - ".venv/Lib/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:321 (check_cxx_compiler_flag)"
+      - ".venv/Lib/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:393 (_pybind11_return_if_cxx_and_linker_flags_work)"
+      - ".venv/Lib/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:427 (_pybind11_generate_lto)"
+      - ".venv/Lib/site-packages/pybind11/share/cmake/pybind11/pybind11Config.cmake:257 (include)"
+      - "CMakeLists.txt:7 (find_package)"
+    checks:
+      - "Performing Test HAS_MSVC_GL_LTCG"
+    directories:
+      source: "C:/Users/Hayden/source/projects/pathfinding/build/CMakeFiles/CMakeScratch/TryCompile-dlmud3"
+      binary: "C:/Users/Hayden/source/projects/pathfinding/build/CMakeFiles/CMakeScratch/TryCompile-dlmud3"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "HAS_MSVC_GL_LTCG"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Hayden/source/projects/pathfinding/build/CMakeFiles/CMakeScratch/TryCompile-dlmud3'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_8687e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.19+164abd434 for .NET Framework
+        Build started 9/27/2025 1:28:41 PM.
+        
+        Project "C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dlmud3\\cmTC_8687e.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_8687e.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dlmud3\\Debug\\".
+          Creating directory "cmTC_8687e.dir\\Debug\\cmTC_8687e.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_8687e.dir\\Debug\\cmTC_8687e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_8687e.dir\\Debug\\cmTC_8687e.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /std:c++17 /Fo"cmTC_8687e.dir\\Debug\\\\" /Fd"cmTC_8687e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dlmud3\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35215 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /std:c++17 /Fo"cmTC_8687e.dir\\Debug\\\\" /Fd"cmTC_8687e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dlmud3\\src.cxx"
+          src.cxx
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dlmud3\\Debug\\cmTC_8687e.exe" /INCREMENTAL /ILK:"cmTC_8687e.dir\\Debug\\cmTC_8687e.ilk" /NOLOGO "-LTCG" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Hayden/source/projects/pathfinding/build/CMakeFiles/CMakeScratch/TryCompile-dlmud3/Debug/cmTC_8687e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Hayden/source/projects/pathfinding/build/CMakeFiles/CMakeScratch/TryCompile-dlmud3/Debug/cmTC_8687e.lib" /MACHINE:X64  /machine:x64 cmTC_8687e.dir\\Debug\\src.obj
+        LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dlmud3\\cmTC_8687e.vcxproj]
+          Generating code
+          Finished generating code
+          cmTC_8687e.vcxproj -> C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dlmud3\\Debug\\cmTC_8687e.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_8687e.dir\\Debug\\cmTC_8687e.tlog\\unsuccessfulbuild".
+          Touching "cmTC_8687e.dir\\Debug\\cmTC_8687e.tlog\\cmTC_8687e.lastbuildstate".
+        Done Building Project "C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dlmud3\\cmTC_8687e.vcxproj" (default targets).
+        
+        Build succeeded.
+        
+        "C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dlmud3\\cmTC_8687e.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\Users\\Hayden\\source\\projects\\pathfinding\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dlmud3\\cmTC_8687e.vcxproj]
+        
+            1 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.38
+        
+      exitCode: 0
+...
