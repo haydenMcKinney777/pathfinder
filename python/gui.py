@@ -1,6 +1,7 @@
 import sys
 import pathfinder       #the link to C++ code
 from PySide6 import QtWidgets, QtGui, QtCore
+from PySide6.QtWidgets import QPushButton, QCheckBox
 
 class Cell(QtWidgets.QGraphicsRectItem):
     def __init__(self, x, y, size, row, col, window):
@@ -96,8 +97,30 @@ class Window(QtWidgets.QWidget):
         self.goal_cell = None
         self.is_drawing = False
 
+        #widgets
+        self.run_button = QPushButton("Run Pathfinder", self)
+        self.run_button.setFixedSize(100,60)
+
+        self.clear_grid_button = QPushButton("Reset Grid", self)
+        self.clear_grid_button.setFixedSize(100,60)
+
+        self.dijkstra_checkbox = QCheckBox(text="Dijkstra")
+        self.astar_checkbox = QCheckBox(text="A*")
+        self.dfs_checkbox = QCheckBox(text="DFS")
+        self.bfs_checkbox = QCheckBox(text="BFS")
+
+        #add widgets to layout
         layout = QtWidgets.QVBoxLayout(self)
         layout.addWidget(self.view)
+        layout.addWidget(self.dijkstra_checkbox)
+        layout.addWidget(self.astar_checkbox)
+        layout.addWidget(self.dfs_checkbox)
+        layout.addWidget(self.bfs_checkbox)
+        layout.addWidget(self.run_button)
+        layout.addWidget(self.clear_grid_button)
+
+        self.dijkstra_checkbox.stateChanged.connect(self.onStateChanged)
+        #self.run_button.clicked.connect(pathfinder)
 
         #create 20x20 grid of 50px cells
         cell_size = 50
@@ -105,6 +128,12 @@ class Window(QtWidgets.QWidget):
             for col in range(20):
                 cell = Cell(col * cell_size, row * cell_size, cell_size, row, col, self)
                 self.scene.addItem(cell)
+
+    def onStateChanged(self):
+        if self.dijkstra_checkbox.isChecked():
+            self.dijkstra_checkbox.setText("Checked")
+        else:
+            self.dijkstra_checkbox.setText("Unchecked")
 
 
 if __name__ == "__main__":
