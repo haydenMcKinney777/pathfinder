@@ -119,8 +119,7 @@ class Window(QtWidgets.QWidget):
         layout.addWidget(self.run_button)
         layout.addWidget(self.clear_grid_button)
 
-        self.dijkstra_checkbox.stateChanged.connect(self.onStateChanged)
-        #self.run_button.clicked.connect(pathfinder)
+        self.run_button.clicked.connect(self.run_algorithm)
 
         #create 20x20 grid of 50px cells
         cell_size = 50
@@ -129,12 +128,35 @@ class Window(QtWidgets.QWidget):
                 cell = Cell(col * cell_size, row * cell_size, cell_size, row, col, self)
                 self.scene.addItem(cell)
 
-    def onStateChanged(self):
-        if self.dijkstra_checkbox.isChecked():
-            self.dijkstra_checkbox.setText("Checked")
-        else:
-            self.dijkstra_checkbox.setText("Unchecked")
+    def run_algorithm(self):
+        if not self.start_cell or not self.goal_cell:
+            print("Start and goal must be set before running an algorithm.\n")
+            return
 
+        start_row, start_col = self.start_cell.row, self.start_cell.col
+        goal_row, goal_col = self.goal_cell.row, self.goal_cell.col
+
+        grid = []
+        for row in range(20):
+            row_data = []
+            for col in range(20):
+                for item in self.scene.items():
+                    if isinstance(item, Cell) and item.row == row and item.col == col:
+                        row_data.append(1 if item.state == "wall" else 0)
+                        break
+            grid.append(row_data)
+
+        if self.dijkstra_checkbox.isChecked():
+            pathfinder.dijkstra_run(grid, start_row, start_col, goal_row, goal_col)
+        
+        if self.astar_checkbox.isChecked():
+            pathfinder.astar_run(grid, start_row, start_col, goal_row, goal_col)
+
+        if self.dfs_checkbox.isChecked():
+            pathfinder.dfs_run(grid, start_row, start_col, goal_row, goal_col)
+
+        if self.bfs_checkbox.isChecked():
+            pathfinder.bfs_run(grid, start_row, start_col, goal_row, goal_col)
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication([])
