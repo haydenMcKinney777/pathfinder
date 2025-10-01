@@ -1,3 +1,5 @@
 *.venv
 build/
 CMakeLists.txt
+.*
+python/tempCodeRunnerFile.py
