@@ -197,13 +197,30 @@ class Window(QtWidgets.QWidget):
             self.views.append(view)
 
             cell_size = 50
+            new_grid = []
             for row in range(20):
+                new_row = []
                 for col in range(20):
                     cell = Cell(col * cell_size, row * cell_size, cell_size, row, col, self)
-                    #copy current grid’s walls/start/goal
+                    #copy current grids walls/start/goal
                     state = self.cells[row][col].state
                     cell.setState(state)
                     scene.addItem(cell)
+
+                    if state == "wall":
+                        new_row.append(1) 
+                    else: 
+                        new_row.append(0)
+                
+                new_grid.append(new_row)
+            
+            start_row, start_col = self.start_cell.row, self.start_cell.col
+            goal_row, goal_col = self.goal_cell.row, self.goal_cell.col
+            
+            """
+            IMPLEMENT THIS LINE UNDERNEATH
+            """
+            path = pathfinder.run_function(new_grid, start_row, start_col, goal_row, goal_col)
 
         self.arrange_views()
 
