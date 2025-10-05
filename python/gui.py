@@ -90,46 +90,52 @@ class Window(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
 
-        self.scenes = []   #each algorithm gets its own scene
-        self.views = []    #each scene gets its own QGraphicsView
+        #containers
+        self.scenes = []
+        self.views = []
         self.cells = []
 
-        self.scene = Scene(self)        #primary scene for initial interaction
+        self.scene = Scene(self)
         self.view = QtWidgets.QGraphicsView(self.scene)
         self.view.setMouseTracking(True)
 
-        self.start_cell = None
-        self.goal_cell = None
-        self.is_drawing = False
+        #control panel
+        self.run_button = QPushButton("Run Pathfinder")
+        self.clear_grid_button = QPushButton("Reset Grid")
+        self.dijkstra_checkbox = QCheckBox("Dijkstra")
+        self.astar_checkbox = QCheckBox("A*")
+        self.dfs_checkbox = QCheckBox("DFS")
+        self.bfs_checkbox = QCheckBox("BFS")
 
-        self.num_grids = 0    #default number of grids. if multiple algorithms get selected to run, multiple grids will appear on screen 
+        #main layout setup
+        self.main_layout = QtWidgets.QVBoxLayout(self)
 
-        #widgets
-        self.run_button = QPushButton("Run Pathfinder", self)
+        #top control area
+        control_layout = QtWidgets.QVBoxLayout()
+        control_layout.addWidget(self.view)
+        control_layout.addWidget(self.dijkstra_checkbox)
+        control_layout.addWidget(self.astar_checkbox)
+        control_layout.addWidget(self.dfs_checkbox)
+        control_layout.addWidget(self.bfs_checkbox)
+        control_layout.addWidget(self.run_button)
+        control_layout.addWidget(self.clear_grid_button)
+        self.main_layout.addLayout(control_layout)
+
         self.run_button.setFixedSize(100,60)
-
-        self.clear_grid_button = QPushButton("Reset Grid", self)
         self.clear_grid_button.setFixedSize(100,60)
 
-        self.dijkstra_checkbox = QCheckBox(text="Dijkstra")
-        self.astar_checkbox = QCheckBox(text="A*")
-        self.dfs_checkbox = QCheckBox(text="DFS")
-        self.bfs_checkbox = QCheckBox(text="BFS")
-
-        #add widgets to layout
-        layout = QtWidgets.QVBoxLayout(self)
-        layout.addWidget(self.view)
-        layout.addWidget(self.dijkstra_checkbox)
-        layout.addWidget(self.astar_checkbox)
-        layout.addWidget(self.dfs_checkbox)
-        layout.addWidget(self.bfs_checkbox)
-        layout.addWidget(self.run_button)
-        layout.addWidget(self.clear_grid_button)
+        #separate container to hold multiple algorithm grids
+        self.grid_display = QtWidgets.QWidget()
+        self.grid_display_layout = QtWidgets.QGridLayout(self.grid_display)
+        self.main_layout.addWidget(self.grid_display)
 
         self.run_button.clicked.connect(self.run_algorithm)
 
-        #create 20x20 grid of 50px cells
+        #initial grid creation
         cell_size = 50
+        self.start_cell = None
+        self.goal_cell = None
+        self.is_drawing = False
 
         for row in range(20):
             row_cells = []
@@ -143,30 +149,10 @@ class Window(QtWidgets.QWidget):
         if not self.start_cell or not self.goal_cell:
             print("Start and goal must be set before running an algorithm.\n")
             return
+        
+        self.view.setParent(None)
 
         selected_algorithms = []
-
-        start_row, start_col = self.start_cell.row, self.start_cell.col
-        goal_row, goal_col = self.goal_cell.row, self.goal_cell.col
-
-        """
-        UNDERSTAND THIS CODE DIRECTLY UNDER THIS COMMENT.
-        IMPLEMENT THE RUN_ALGORITHM FUNCTION IN PYTHON AND UNDERSTAND IT
-        UNDERSTAND THE CHANGES WE MADE IN BINDINGS.CPP, ALGORITHMS.H, AND ALGORITHMS.CPP
-        UNDERSTAND WHY WE HAD TO REBUILD AFTER MAKING THE ABOVE CHANGES
-        """
-        #create a snapshot of the current grid state at function run time to send to C++
-        grid = []
-        for row in range(20):
-            row_data = []
-            for col in range(20):
-                cell = self.cells[row][col]
-                if cell.state == "wall":
-                    row_data.append(1)
-                else:
-                    row_data.append(0)
-            grid.append(row_data)
-
         if self.dijkstra_checkbox.isChecked():
             selected_algorithms.append(("Dijkstra", pathfinder.dijkstra_run))
 
@@ -182,11 +168,26 @@ class Window(QtWidgets.QWidget):
         self.scenes.clear()
         self.views.clear() 
 
+        #clear old grid views
+        for i in reversed(range(self.grid_display_layout.count())):
+            widget = self.grid_display_layout.itemAt(i).widget()
+            if widget:
+                widget.setParent(None)
+
         for algorithm, run_function in selected_algorithms:
             scene = Scene(self)
             view = QtWidgets.QGraphicsView(scene)
             self.scenes.append(scene)
             self.views.append(view)
+
+            cell_size = 50
+            for row in range(20):
+                for col in range(20):
+                    cell = Cell(col * cell_size, row * cell_size, cell_size, row, col, self)
+                    #copy current grid’s walls/start/goal
+                    state = self.cells[row][col].state
+                    cell.setState(state)
+                    scene.addItem(cell)
 
         self.arrange_views()
 
@@ -195,10 +196,17 @@ class Window(QtWidgets.QWidget):
         grid_layout = QtWidgets.QGridLayout()
         scale_factor = {1: 1.0, 2: 0.7, 3: 0.6}.get(count, 0.5)     #based on the number of algorithms selected to run, we scale each view
 
+        for i in reversed(range(self.grid_display_layout.count())):
+            widget = self.grid_display_latout.itemAt(i).widget()
+            if widget:
+                widget.setParent(None)
+
         for i, view in enumerate(self.views):
             view.resetTransform()
             view.scale(scale_factor, scale_factor)
-            layout.addWidget(view, i // 2, i % 2)
+            self.grid_display_layout.addWidget(view, i // 2, i % 2)
+
+        self.setLayout(grid_layout)
       
 if __name__ == "__main__":
     app = QtWidgets.QApplication([])
