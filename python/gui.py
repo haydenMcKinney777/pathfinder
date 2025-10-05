@@ -150,8 +150,6 @@ class Window(QtWidgets.QWidget):
             print("Start and goal must be set before running an algorithm.\n")
             return
         
-        self.view.setParent(None)
-
         selected_algorithms = []
         if self.dijkstra_checkbox.isChecked():
             selected_algorithms.append(("Dijkstra", pathfinder.dijkstra_run))
@@ -165,8 +163,14 @@ class Window(QtWidgets.QWidget):
         if self.bfs_checkbox.isChecked():
             selected_algorithms.append(("BFS", pathfinder.bfs_run))
 
+        if not selected_algorithms:
+            print("Algorithm must be selected.\n")
+            return
+
         self.scenes.clear()
         self.views.clear() 
+        
+        self.view.setParent(None)
 
         #clear old grid views
         for i in reversed(range(self.grid_display_layout.count())):
