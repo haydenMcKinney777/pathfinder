@@ -90,16 +90,17 @@ class Window(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
 
-        #containers
+        # containers
         self.scenes = []
         self.views = []
         self.cells = []
 
+        # grid scene/view
         self.scene = Scene(self)
         self.view = QtWidgets.QGraphicsView(self.scene)
         self.view.setMouseTracking(True)
 
-        #control panel
+        # controls
         self.run_button = QPushButton("Run Pathfinder")
         self.clear_grid_button = QPushButton("Reset Grid")
         self.dijkstra_checkbox = QCheckBox("Dijkstra")
@@ -107,27 +108,38 @@ class Window(QtWidgets.QWidget):
         self.dfs_checkbox = QCheckBox("DFS")
         self.bfs_checkbox = QCheckBox("BFS")
 
-        #main layout setup
-        self.main_layout = QtWidgets.QVBoxLayout(self)
+        self.run_button.setFixedSize(100, 40)
+        self.clear_grid_button.setFixedSize(100, 40)
 
-        #top control area
+        self.main_layout = QtWidgets.QHBoxLayout(self)  # split window horizontally
+
+        #left control panel
         control_layout = QtWidgets.QVBoxLayout()
-        control_layout.addWidget(self.view)
+        control_layout.addStretch(1)
         control_layout.addWidget(self.dijkstra_checkbox)
         control_layout.addWidget(self.astar_checkbox)
         control_layout.addWidget(self.dfs_checkbox)
         control_layout.addWidget(self.bfs_checkbox)
-        control_layout.addWidget(self.run_button)
-        control_layout.addWidget(self.clear_grid_button)
-        self.main_layout.addLayout(control_layout)
 
-        self.run_button.setFixedSize(100,60)
-        self.clear_grid_button.setFixedSize(100,60)
+        #button row
+        button_row = QtWidgets.QHBoxLayout()
+        button_row.addWidget(self.run_button)
+        button_row.addWidget(self.clear_grid_button)
 
-        #separate container to hold multiple algorithm grids
+        control_layout.addLayout(button_row)
+        control_layout.addStretch(1)
+
+        #right grid display
+        right_layout = QtWidgets.QVBoxLayout()
+        right_layout.addWidget(self.view)
+
+        #grid container for multiple results
         self.grid_display = QtWidgets.QWidget()
         self.grid_display_layout = QtWidgets.QGridLayout(self.grid_display)
-        self.main_layout.addWidget(self.grid_display)
+        right_layout.addWidget(self.grid_display)
+
+        self.main_layout.addLayout(control_layout, 0)  #control panel on left
+        self.main_layout.addLayout(right_layout, 1)    #grid takes the rest
 
         self.run_button.clicked.connect(self.run_algorithm)
 
