@@ -1,5 +1,7 @@
 import sys
 import pathfinder       #the link to C++ code
+import concurrent.futures
+import copy
 from PySide6 import QtWidgets, QtGui, QtCore
 from PySide6.QtWidgets import QPushButton, QCheckBox
 
@@ -65,7 +67,6 @@ class Cell(QtWidgets.QGraphicsRectItem):
         if event.button() == QtCore.Qt.LeftButton:  #if the button that was released over a cell was left mouse, set is_drawing False
             self.window.is_drawing = False
 
-
 class Scene(QtWidgets.QGraphicsScene):
     def __init__(self, window):
         super().__init__()
@@ -89,13 +90,19 @@ class Window(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
 
-        self.scene = Scene(self)
+        self.scenes = []   #each algorithm gets its own scene
+        self.views = []    #each scene gets its own QGraphicsView
+        self.cells = []
+
+        self.scene = Scene(self)        #primary scene for initial interaction
         self.view = QtWidgets.QGraphicsView(self.scene)
         self.view.setMouseTracking(True)
 
         self.start_cell = None
         self.goal_cell = None
         self.is_drawing = False
+
+        self.num_grids = 0    #default number of grids. if multiple algorithms get selected to run, multiple grids will appear on screen 
 
         #widgets
         self.run_button = QPushButton("Run Pathfinder", self)
@@ -123,41 +130,76 @@ class Window(QtWidgets.QWidget):
 
         #create 20x20 grid of 50px cells
         cell_size = 50
+
         for row in range(20):
+            row_cells = []
             for col in range(20):
                 cell = Cell(col * cell_size, row * cell_size, cell_size, row, col, self)
                 self.scene.addItem(cell)
+                row_cells.append(cell)
+            self.cells.append(row_cells)
 
     def run_algorithm(self):
         if not self.start_cell or not self.goal_cell:
             print("Start and goal must be set before running an algorithm.\n")
             return
 
+        selected_algorithms = []
+
         start_row, start_col = self.start_cell.row, self.start_cell.col
         goal_row, goal_col = self.goal_cell.row, self.goal_cell.col
 
+        """
+        UNDERSTAND THIS CODE DIRECTLY UNDER THIS COMMENT.
+        IMPLEMENT THE RUN_ALGORITHM FUNCTION IN PYTHON AND UNDERSTAND IT
+        UNDERSTAND THE CHANGES WE MADE IN BINDINGS.CPP, ALGORITHMS.H, AND ALGORITHMS.CPP
+        UNDERSTAND WHY WE HAD TO REBUILD AFTER MAKING THE ABOVE CHANGES
+        """
+        #create a snapshot of the current grid state at function run time to send to C++
         grid = []
         for row in range(20):
             row_data = []
             for col in range(20):
-                for item in self.scene.items():
-                    if isinstance(item, Cell) and item.row == row and item.col == col:
-                        row_data.append(1 if item.state == "wall" else 0)
-                        break
+                cell = self.cells[row][col]
+                if cell.state == "wall":
+                    row_data.append(1)
+                else:
+                    row_data.append(0)
             grid.append(row_data)
 
         if self.dijkstra_checkbox.isChecked():
-            pathfinder.dijkstra_run(grid, start_row, start_col, goal_row, goal_col)
-        
+            selected_algorithms.append(("Dijkstra", pathfinder.dijkstra_run))
+
         if self.astar_checkbox.isChecked():
-            pathfinder.astar_run(grid, start_row, start_col, goal_row, goal_col)
+            selected_algorithms.append(("A*", pathfinder.astar_run))
 
         if self.dfs_checkbox.isChecked():
-            pathfinder.dfs_run(grid, start_row, start_col, goal_row, goal_col)
+            selected_algorithms.append(("DFS", pathfinder.dfs_run))
 
         if self.bfs_checkbox.isChecked():
-            pathfinder.bfs_run(grid, start_row, start_col, goal_row, goal_col)
+            selected_algorithms.append(("BFS", pathfinder.bfs_run))
 
+        self.scenes.clear()
+        self.views.clear() 
+
+        for algorithm, run_function in selected_algorithms:
+            scene = Scene(self)
+            view = QtWidgets.QGraphicsView(scene)
+            self.scenes.append(scene)
+            self.views.append(view)
+
+        self.arrange_views()
+
+    def arrange_views(self):
+        count = len(self.views)
+        grid_layout = QtWidgets.QGridLayout()
+        scale_factor = {1: 1.0, 2: 0.7, 3: 0.6}.get(count, 0.5)     #based on the number of algorithms selected to run, we scale each view
+
+        for i, view in enumerate(self.views):
+            view.resetTransform()
+            view.scale(scale_factor, scale_factor)
+            layout.addWidget(view, i // 2, i % 2)
+      
 if __name__ == "__main__":
     app = QtWidgets.QApplication([])
 
