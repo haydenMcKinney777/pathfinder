@@ -23,7 +23,15 @@ class Cell(QtWidgets.QGraphicsRectItem):
     def setState(self, state: str):
         """Set the logical state and update the visual color accordingly."""
         self.state = state
-        color = {"wall":"black", "start":"green", "goal":"red", "path":"orange", "finalpath":"lightblue"}.get(state, "grey")
+
+        color = {
+            "wall":"black", 
+            "start":"green", 
+            "goal":"red", 
+            "visited":"orange", 
+            "finalpath":"lightblue",
+            }.get(state, "grey")
+        
         self.setBrush(QtGui.QBrush(QtGui.QColor(color)))
 
     def mousePressEvent(self, event):
