@@ -23,7 +23,7 @@ class Cell(QtWidgets.QGraphicsRectItem):
     def setState(self, state: str):
         """Set the logical state and update the visual color accordingly."""
         self.state = state
-        color = {"wall":"black", "start":"green", "goal":"red"}.get(state, "grey")
+        color = {"wall":"black", "start":"green", "goal":"red", "path":"lightblue"}.get(state, "grey")
         self.setBrush(QtGui.QBrush(QtGui.QColor(color)))
 
     def mousePressEvent(self, event):
@@ -220,7 +220,8 @@ class Window(QtWidgets.QWidget):
             """
             IMPLEMENT THIS LINE UNDERNEATH
             """
-            path = pathfinder.run_function(new_grid, start_row, start_col, goal_row, goal_col)
+
+            path = run_function(new_grid, start_row, start_col, goal_row, goal_col)
 
         self.arrange_views()
 
