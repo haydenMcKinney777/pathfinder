@@ -250,6 +250,7 @@ class Window(QtWidgets.QWidget):
         self.goal_cell = None
         self.is_drawing = False
 
+        #Qt collapses its structures - when you add or remove widgets, Qt internall re-indexes them. so if you had a list like [0, 1, 2], if you removed '0', then the list would become [0, 1] (everything gets shifted down)
         for i in reversed(range(self.grid_display_layout.count())):
             widget = self.grid_display_layout.itemAt(i).widget()
             if widget:
