@@ -1,6 +1,8 @@
 import sys
-sys.path.insert(0, r"C:\Users\Hayden\source\projects\pathfinding\build\Release")
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'build', 'Release')))
 import pathfinder       #the link to C++ code
+print("USING:", pathfinder.__file__)  # must point into .../build/Release/pathfinder.cp39-win_amd64.pyd
 import concurrent.futures
 import copy
 from PySide6 import QtWidgets, QtGui, QtCore
