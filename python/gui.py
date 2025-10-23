@@ -153,20 +153,9 @@ class Window(QtWidgets.QWidget):
         self.main_layout.addLayout(right_layout, 1)    #grid takes the rest
 
         self.run_button.clicked.connect(self.run_algorithm)
+        self.clear_grid_button.clicked.connect(self.clear_grid)
 
-        #initial grid creation
-        cell_size = 50
-        self.start_cell = None
-        self.goal_cell = None
-        self.is_drawing = False
-
-        for row in range(20):
-            row_cells = []
-            for col in range(20):
-                cell = Cell(col * cell_size, row * cell_size, cell_size, row, col, self)
-                self.scene.addItem(cell)
-                row_cells.append(cell)
-            self.cells.append(row_cells)
+        self.clear_grid()
 
     def run_algorithm(self):
         if not self.start_cell or not self.goal_cell:
@@ -253,6 +242,25 @@ class Window(QtWidgets.QWidget):
 
         self.setLayout(grid_layout)
       
+    def clear_grid(self):
+        self.scene.clear()
+        self.scenes.clear()
+        self.views.clear() 
+        self.cells = []
+        cell_size = 50
+        self.start_cell = None
+        self.goal_cell = None
+        self.is_drawing = False
+
+        for row in range(20):
+            row_cells = []
+            for col in range(20):
+                cell = Cell(col * cell_size, row * cell_size, cell_size, row, col, self)
+                self.scene.addItem(cell)
+                row_cells.append(cell)
+            self.cells.append(row_cells) 
+
+
 if __name__ == "__main__":
     app = QtWidgets.QApplication([])
 
