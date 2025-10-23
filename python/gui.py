@@ -243,10 +243,8 @@ class Window(QtWidgets.QWidget):
         self.setLayout(grid_layout)
       
     def clear_grid(self):
-        self.scene.clear()
-        self.scenes.clear()
-        self.views.clear() 
         self.cells = []
+        self.scenes = []
         cell_size = 50
         self.start_cell = None
         self.goal_cell = None
@@ -259,6 +257,9 @@ class Window(QtWidgets.QWidget):
                 self.scene.addItem(cell)
                 row_cells.append(cell)
             self.cells.append(row_cells) 
+
+        if self.view.parent() is None:
+            self.main_layout.addWidget(self.view)
 
 
 if __name__ == "__main__":
