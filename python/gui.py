@@ -1,4 +1,5 @@
 import sys
+sys.path.insert(0, r"C:\Users\Hayden\source\projects\pathfinding\build\Release")
 import pathfinder       #the link to C++ code
 import concurrent.futures
 import copy
