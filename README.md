@@ -20,6 +20,7 @@ C++ back-end provides algorithm performance and Python-friendly bindings via PyB
 
 Scalable layout that automatically adjusts grid sizes based on selected algorithms.
 
+
 Requirements
 
 Python 3.9+ (must match the .pyd build target)
@@ -31,6 +32,7 @@ Visual Studio Build Tools (MSVC compiler)
 PyBind11 (Python–C++ bindings)
 
 PySide6 (GUI framework)
+
 
 SETUP INSTRUCTIONS
   1. Clone the repo
