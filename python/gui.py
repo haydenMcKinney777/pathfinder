@@ -250,6 +250,15 @@ class Window(QtWidgets.QWidget):
         self.goal_cell = None
         self.is_drawing = False
 
+        for i in reversed(range(self.grid_display_layout.count())):
+            widget = self.grid_display_layout.itemAt(i).widget()
+            if widget:
+                widget.setParent(None)
+
+        if self.view.parent() is not None:
+            self.main_layout.removeWidget(self.view)
+
+        #rebuild grid
         for row in range(20):
             row_cells = []
             for col in range(20):
@@ -258,6 +267,7 @@ class Window(QtWidgets.QWidget):
                 row_cells.append(cell)
             self.cells.append(row_cells) 
 
+        #re add it
         if self.view.parent() is None:
             self.main_layout.addWidget(self.view)
 
