@@ -257,12 +257,4 @@ if __name__ == "__main__":
     window.resize(1200, 1200)
     window.show()
 
-    #TEST TO MAKE SURE PYTHON CAN TALK WITH CPP FILES:
-    print("Calling C++ from Python:")
-
-    print("Dijkstra:", pathfinder.dijkstra_run(0, 10))
-    print("A*:", pathfinder.astar_run(0, 10))
-    print("DFS:", pathfinder.dfs_run(0, 10))
-    print("BFS:", pathfinder.bfs_run(0, 10))
-
     sys.exit(app.exec())
